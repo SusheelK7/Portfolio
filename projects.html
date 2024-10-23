@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/projectStyle.css">
+    <link rel="stylesheet" href="navbar.css">
+   
+    <title>Projects</title>
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Susheel Kumar</h2>
+        </div>
+        <div class="menulines">
+            <a class="menubar" onclick=showSidebar() href=""> <svg xmlns="http://www.w3.org/2000/svg" height="32"
+                    viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">services</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul class="sidebar">
+            <a class="closebtn" onclick=hideSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </a>
+
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="projects.html">
+                <li>Projects</li>
+            </a>
+            <a href="about.html">
+                <li>About Me</li>
+            </a>
+            <a href="services.html">
+                <li>Services</li>
+            </a>
+
+        </ul>
+    </nav>
+
+    <h1 style="display: flex; justify-content: center;
+    align-items: center; font-size: 58px;">Projects</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+
+        <div class="col">
+          <div class="card">
+            <img src="image/1.png" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h2 class="card-title">Landing Page Air University</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/2.png" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h2 class="card-title">Restaurant</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/3.png" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h2 class="card-title">Cricket (Crick Info)</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="image/4.png" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h2 class="card-title">E-Commerce</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #425661;
+    color: white;
+    flex-direction: column;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: auto;
+}
+
+h2,p{
+    padding: 12px 18px;
+}
+
+@media screen and (max-width:800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+
+        background-repeat: no-repeat;
+        /* background-image: url(Untitled\ design.png); */
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 8pxx;
+    }
+}

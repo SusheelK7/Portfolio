@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: jost;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #B1C1C9;
+}
+
+.sidebar {
+    display: none;
+}
+
+.mySection{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px 90px;
+    
+}
+
+
+.leftSide{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 15px;
+  
+}
+
+.btns{
+    margin-top: 8px;
+}
+
+.btns a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    padding: 8px 18px;
+    background-color: #425661;
+}
+
+.socialLinks ul li{
+    cursor: pointer;
+    margin: 0px 20px 0px 0px;
+}
+
+.socialLinks ul li i{
+    font-size: 28px;
+}
+
+img{
+    animation: bouncing 2s infinite ;
+    top: 0px;
+    position: relative;
+    width: 30%;
+    height: auto;
+    filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.456));
+}
+
+@keyframes bouncing {
+
+   0%{
+        top: 0px;
+   }
+
+   50% {
+        top: 20px;
+   }
+
+   100%{
+        top: 0px;
+   }
+    
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+
+        background-repeat: no-repeat;
+        /* background-image: url(Untitled\ design.png); */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        border-radius: 0;
+        padding: 8px 20px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        padding: 0;
+    }
+
+    .sidebar {
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 40vw;
+        height: 100vh;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        z-index: 999;
+        background-color: black;
+    }
+
+    .menubar {
+        background-color: white;
+        display: flex;
+
+    }
+
+    .sidebar img {
+        background-color: white;
+    }
+
+
+
+    .sidebar a li:hover {
+        background-color: rgba(255, 255, 255, 0.31);
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+
+    }
+
+
+    .sidebar a li {
+        text-decoration: none;
+        padding: 22px 30px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+        color: rgb(255, 255, 255);
+    }
+
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .closebtn {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+    }
+
+    .closebtn svg {
+        display: flex;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 30px 0px 30px 30px;
+    }
+
+    .mySection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 70px 50px;
+    }
+
+    .btns a{
+        transition: all .3s ease-in-out;
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:426px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+
+        background-repeat: no-repeat;
+        /* background-image: url(Untitled\ design.png); */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        border-radius: 0;
+        padding: 8px 20px;
+
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        padding: 0;
+    }
+
+    .sidebar {
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        z-index: 999;
+        background-color: black;
+    }
+
+    .menubar {
+        background-color: white;
+        display: flex;
+
+    }
+
+    .sidebar img {
+        background-color: white;
+    }
+
+
+
+    .sidebar a li:hover {
+        background-color: rgba(255, 255, 255, 0.31);
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+
+    }
+
+
+    .sidebar a li {
+        text-decoration: none;
+        padding: 22px 30px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+        color: rgb(255, 255, 255);
+    }
+
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .closebtn {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+    }
+
+    .closebtn svg {
+        display: flex;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 30px 0px 30px 30px;
+    }
+
+    
+    .mySection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img{
+        width: 20%;
+
+    }
+
+    .btns a{
+        font-size: 10px;
+        transition: all .3s ease-in-out;
+    }
+
+}
