@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import { useReveal } from "./hooks/useReveal";
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
         <Education />
         <Contact />
       </main>
+      <ScrollToTop />
       <Footer />
     </div>
   );
