@@ -8,7 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal";
 
 export default function App() {
@@ -48,6 +48,7 @@ export default function App() {
         <Contact />
       </main>
       <ScrollToTop />
+      <Analytics />
       <Footer />
       <Analytics />
     </div>
