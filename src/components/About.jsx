@@ -21,7 +21,7 @@ export default function About() {
             </h2>
             <div className="reveal h-px w-16 bg-neutral-300 dark:bg-neutral-700 mb-6" />
             <p className="reveal font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base">
-              I'm a motivated Full Stack MERN Developer currently pursuing my
+              I'm a motivated Full Stack Developer currently pursuing my
               Bachelor of Computer Science at Air University, Islamabad (2023–2027).
             </p>
             <p className="reveal reveal-delay-1 font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base mt-4">

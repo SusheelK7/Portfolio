@@ -6,7 +6,7 @@ export default function Footer() {
           SK<span className="text-neutral-600 dark:text-neutral-400">.</span>
         </span>
         <p className="font-body font-light text-xs text-neutral-600 dark:text-neutral-400 text-center">
-          © {new Date().getFullYear()} Susheel Kumar — Full Stack MERN Developer
+          © {new Date().getFullYear()} Susheel Kumar — Full Stack Developer
         </p>
         <p className="font-mono text-xs text-neutral-600 dark:text-neutral-400 font-extrabold">
           Islamabad, Pakistan

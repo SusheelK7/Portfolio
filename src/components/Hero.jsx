@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-20 text-center">
         {/* Tag line */}
         <p className="reveal font-mono text-xs tracking-[0.25em] uppercase text-neutral-600 dark:text-neutral-400 mb-6 font-extrabold">
-          Full Stack MERN Developer
+          Full Stack Developer
         </p>
 
         {/* Name */}
