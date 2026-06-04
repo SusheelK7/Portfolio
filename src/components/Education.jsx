@@ -19,7 +19,7 @@ export default function Education() {
         <div className="reveal reveal-delay-1 bg-neutral-50 dark:bg-neutral-900 rounded-2xl border border-neutral-100 dark:border-neutral-800 p-8 md:p-10 mb-8">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
             <div>
-              <p className="font-mono text-xs tracking-widest uppercase text-neutral-600 dark:text-neutral-400 mb-2">
+              <p className="font-mono text-xs tracking-widest uppercase font-extrabold text-neutral-600 dark:text-neutral-400 mb-2">
                 Degree
               </p>
               <h3 className="font-display text-2xl font-bold text-neutral-900 dark:text-white mb-1">
@@ -36,7 +36,7 @@ export default function Education() {
               <span className="inline-block px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-400">
                 2023 – 2027
               </span>
-              <p className="font-mono text-xs text-neutral-300 dark:text-neutral-400 mt-2">
+              <p className="font-mono text-xs text-neutral-600 font-extrabold dark:text-neutral-400 mt-2">
                 In Progress
               </p>
             </div>

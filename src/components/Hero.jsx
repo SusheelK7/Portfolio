@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="reveal reveal-delay-5 mt-20 flex flex-col items-center gap-2 text-neutral-300 dark:text-neutral-400 font-extrabold">
+        <div className="reveal reveal-delay-5 mt-20 flex flex-col items-center gap-2 text-neutral-600 dark:text-neutral-400 font-extrabold">
           <span className="font-mono text-xs tracking-widest">SCROLL</span>
           <div className="w-px h-12 bg-gradient-to-b from-neutral-300 to-transparent dark:from-neutral-700 animate-pulse" />
         </div>

@@ -34,7 +34,7 @@ export default function About() {
           {/* Right – quick facts */}
           <div className="grid grid-cols-1 gap-4">
             {[
-              { label: "Location", value: "Rawalpindi, Pakistan" },
+              { label: "Location", value: "Islamabad, Pakistan" },
               { label: "Education", value: "BSCS — Air University Islamabad" },
               { label: "Graduation", value: "2023 – 2027" },
               { label: "Focus", value: "Full Stack Web Development" },

@@ -8,8 +8,8 @@ export default function Footer() {
         <p className="font-body font-light text-xs text-neutral-600 dark:text-neutral-400 text-center">
           © {new Date().getFullYear()} Susheel Kumar — Full Stack MERN Developer
         </p>
-        <p className="font-mono text-xs text-neutral-300 dark:text-neutral-400 font-extrabold">
-          Rawalpindi, Pakistan
+        <p className="font-mono text-xs text-neutral-600 dark:text-neutral-400 font-extrabold">
+          Islamabad, Pakistan
         </p>
       </div>
     </footer>
