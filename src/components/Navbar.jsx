@@ -26,7 +26,7 @@ export default function Navbar({ dark, toggleDark }) {
           href="#hero"
           className="font-display text-xl font-bold tracking-tight text-neutral-900 dark:text-white"
         >
-          SK<span className="text-neutral-400 dark:text-neutral-500">.</span>
+          SK<span className="text-neutral-600 dark:text-neutral-300">.</span>
         </a>
 
         {/* Desktop nav */}
@@ -35,7 +35,7 @@ export default function Navbar({ dark, toggleDark }) {
             <li key={l}>
               <a
                 href={`#${l.toLowerCase()}`}
-                className="font-body text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors tracking-wide"
+                className="font-body text-sm font-medium text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors tracking-wide"
               >
                 {l}
               </a>

@@ -5,7 +5,7 @@ export default function Contact() {
       className="scroll-section flex items-center bg-neutral-50 dark:bg-neutral-900"
     >
       <div className="max-w-5xl mx-auto px-6 py-28 w-full">
-        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-400 dark:text-neutral-500 mb-4">
+        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-600 dark:text-neutral-400 mb-4 font-extrabold">
           05 — Contact
         </p>
 
@@ -14,7 +14,7 @@ export default function Contact() {
           <div>
             <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white leading-tight mb-6">
               Let's build
-              <span className="block italic font-medium text-neutral-400 dark:text-neutral-500">
+              <span className="block italic font-medium text-neutral-600 dark:text-neutral-300">
                 something
               </span>
             </h2>
@@ -72,11 +72,11 @@ export default function Contact() {
                 href={href}
                 className={`reveal reveal-delay-${i + 1} flex items-center gap-4 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors group`}
               >
-                <span className="w-9 h-9 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-colors">
+                <span className="w-9 h-9 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-400 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-colors">
                   {icon}
                 </span>
                 <div>
-                  <p className="font-mono text-xs tracking-widest uppercase text-neutral-400 dark:text-neutral-600">
+                  <p className="font-mono text-xs tracking-widest uppercase text-neutral-600 dark:text-neutral-400">
                     {label}
                   </p>
                   <p className="font-body font-medium text-sm text-neutral-800 dark:text-neutral-200">

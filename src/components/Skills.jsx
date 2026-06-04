@@ -32,12 +32,12 @@ export default function Skills() {
       className="scroll-section flex items-center bg-white dark:bg-neutral-950"
     >
       <div className="max-w-5xl mx-auto px-6 py-28 w-full">
-        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-400 dark:text-neutral-500 mb-4">
+        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-600 dark:text-neutral-400 font-extrabold mb-4">
           02 — Skills
         </p>
         <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-14 leading-tight">
           Technical
-          <span className="block italic font-medium text-neutral-400 dark:text-neutral-500">
+          <span className="block italic font-medium text-neutral-600 dark:text-neutral-300">
             expertise
           </span>
         </h2>
@@ -48,7 +48,7 @@ export default function Skills() {
               key={category}
               className={`reveal reveal-delay-${(gi % 4) + 1} p-6 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900`}
             >
-              <p className="font-mono text-xs tracking-widest uppercase text-neutral-400 dark:text-neutral-500 mb-4">
+              <p className="font-mono text-xs tracking-widest uppercase text-neutral-600 dark:text-neutral-400 mb-4">
                 {category}
               </p>
               <div className="flex flex-wrap gap-2">

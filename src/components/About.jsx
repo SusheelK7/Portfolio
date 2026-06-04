@@ -6,7 +6,7 @@ export default function About() {
     >
       <div className="max-w-5xl mx-auto px-6 py-28 w-full">
         {/* Section label */}
-        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-400 dark:text-neutral-500 mb-4">
+        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-600 dark:text-neutral-400 mb-4 font-extrabold">
           01 — About
         </p>
 
@@ -15,7 +15,7 @@ export default function About() {
           <div>
             <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white leading-tight mb-6">
               Crafting digital
-              <span className="block italic font-medium text-neutral-400 dark:text-neutral-500">
+              <span className="block italic font-medium text-neutral-600 dark:text-neutral-300">
                 experiences
               </span>
             </h2>
@@ -44,7 +44,7 @@ export default function About() {
                 key={label}
                 className={`reveal reveal-delay-${i + 1} flex items-start gap-4 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
               >
-                <span className="font-mono text-xs text-neutral-400 dark:text-neutral-600 uppercase tracking-widest pt-0.5 w-24 shrink-0">
+                <span className="font-mono text-xs font-extrabold text-neutral-600 dark:text-neutral-400 uppercase tracking-widest pt-0.5 w-24 shrink-0">
                   {label}
                 </span>
                 <span className="font-body font-medium text-sm text-neutral-800 dark:text-neutral-200">

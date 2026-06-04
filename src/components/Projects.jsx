@@ -49,12 +49,12 @@ export default function Projects() {
       className="scroll-section flex items-center bg-neutral-50 dark:bg-neutral-900"
     >
       <div className="max-w-5xl mx-auto px-6 py-28 w-full">
-        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-400 dark:text-neutral-500 mb-4">
+        <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-600 dark:text-neutral-400 font-extrabold mb-4">
           03 — Projects
         </p>
         <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-16 leading-tight">
           Selected
-          <span className="block italic font-medium text-neutral-400 dark:text-neutral-500">
+          <span className="block italic font-medium text-neutral-600 dark:text-neutral-300">
             work
           </span>
         </h2>
@@ -63,22 +63,22 @@ export default function Projects() {
           {projects.map((p, i) => (
             <div
               key={p.number}
-              className={`reveal reveal-delay-${i + 1} group bg-white dark:bg-neutral-950 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors duration-300`}
+              className={`reveal reveal-delay-${i + 1} group bg-white dark:bg-neutral-950 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors duration-300 `}
             >
-              <div className="p-8 md:p-10">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+              <div className="p-8 md:p-10 ">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 ">
                   {/* Left */}
                   <div className="flex-1">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className="font-mono text-xs text-neutral-300 dark:text-neutral-700">
+                      <span className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
                         {p.number}
                       </span>
-                      <div className="h-px flex-1 bg-neutral-100 dark:bg-neutral-800" />
+                      <div className="h-px flex-1 bg-neutral-400 dark:bg-neutral-600" />
                     </div>
                     <h3 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-1">
                       {p.title}
                     </h3>
-                    <p className="font-body text-sm font-light text-neutral-400 dark:text-neutral-500 mb-4 italic">
+                    <p className="font-body text-sm text-neutral-600 dark:text-neutral-400 font-bold mb-4 italic">
                       {p.subtitle}
                     </p>
                     <p className="font-body font-light text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-lg">
@@ -88,7 +88,7 @@ export default function Projects() {
 
                   {/* Right */}
                   <div className="md:w-64 shrink-0">
-                    <p className="font-mono text-xs tracking-widest uppercase text-neutral-400 dark:text-neutral-600 mb-3">
+                    <p className="font-mono text-xs tracking-widest uppercase text-neutral-600 dark:text-neutral-400 mb-3">
                       Highlights
                     </p>
                     <ul className="flex flex-col gap-2">
@@ -106,7 +106,7 @@ export default function Projects() {
                       {p.stack.map((s) => (
                         <span
                           key={s}
-                          className="px-2.5 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 font-mono text-xs text-neutral-500 dark:text-neutral-400"
+                          className="px-2.5 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 font-mono text-xs text-neutral-700 dark:text-neutral-400"
                         >
                           {s}
                         </span>

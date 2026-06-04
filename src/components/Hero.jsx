@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-20 text-center">
         {/* Tag line */}
-        <p className="reveal font-mono text-xs font-light tracking-[0.25em] uppercase text-neutral-400 dark:text-neutral-500 mb-6">
+        <p className="reveal font-mono text-xs tracking-[0.25em] uppercase text-neutral-600 dark:text-neutral-400 mb-6 font-extrabold">
           Full Stack MERN Developer
         </p>
 
@@ -27,12 +27,12 @@ export default function Hero() {
         <h1 className="reveal reveal-delay-1 font-display text-6xl md:text-8xl font-bold text-neutral-900 dark:text-white leading-none tracking-tight mb-2">
           Susheel
         </h1>
-        <h1 className="reveal reveal-delay-2 font-display text-6xl md:text-8xl font-medium italic text-neutral-400 dark:text-neutral-600 leading-none tracking-tight mb-10">
+        <h1 className="reveal reveal-delay-2 font-display text-6xl md:text-8xl font-medium italic text-neutral-600 dark:text-neutral-400 leading-none tracking-tight mb-10">
           Kumar
         </h1>
 
         {/* Summary */}
-        <p className="reveal reveal-delay-3 font-body text-base font-light text-neutral-500 dark:text-neutral-400 max-w-xl mx-auto leading-relaxed mb-12">
+        <p className="reveal reveal-delay-3 font-body text-base font-light text-neutral-700 dark:text-neutral-400 max-w-xl mx-auto leading-relaxed mb-12">
           Building responsive, scalable web applications with clean code and a
           passion for modern UI — from backend APIs to polished frontends.
         </p>
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="reveal reveal-delay-5 mt-20 flex flex-col items-center gap-2 text-neutral-300 dark:text-neutral-700">
+        <div className="reveal reveal-delay-5 mt-20 flex flex-col items-center gap-2 text-neutral-300 dark:text-neutral-400 font-extrabold">
           <span className="font-mono text-xs tracking-widest">SCROLL</span>
           <div className="w-px h-12 bg-gradient-to-b from-neutral-300 to-transparent dark:from-neutral-700 animate-pulse" />
         </div>
