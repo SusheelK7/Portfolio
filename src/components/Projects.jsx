@@ -3,7 +3,7 @@ const projects = [
   {
     number: "01",
     title: "KaamWala.pk",
-    repo:"https://github.com/RaoUmair55/Campusbuzz.git",
+    repo:"https://github.com/SusheelK7/kaamwala.git",
     subtitle: "Service Marketplace Platform",
     stack: ["MERN Stack", "Socket.io", "JWT", "OTP Auth"],
     description:
