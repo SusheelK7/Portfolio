@@ -2,11 +2,11 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-section flex items-center bg-neutral-50 dark:bg-neutral-900"
+      className="scroll-section flex items-center bg-white dark:bg-neutral-950"
     >
       <div className="max-w-5xl mx-auto px-6 py-28 w-full">
         <p className="reveal font-mono text-xs tracking-[0.2em] uppercase text-neutral-600 dark:text-neutral-400 mb-4 font-extrabold">
-          05 — Contact
+          06 — Contact
         </p>
 
         <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -15,22 +15,32 @@ export default function Contact() {
             <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white leading-tight mb-6">
               Let's build
               <span className="block italic font-medium text-neutral-600 dark:text-neutral-300">
-                something
+                something great
               </span>
             </h2>
             <p className="reveal font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base mb-8">
-              I'm open to freelance projects, collaborations, and full-time
-              opportunities. Feel free to reach out — I'd love to connect.
+              I'm open to software engineering opportunities, internships, freelance projects, and collaborations. Feel free to reach out directly via email or phone.
             </p>
-            <a
-              href="mailto:susheelkumaar3@gmail.com"
-              className="reveal inline-flex items-center gap-3 px-6 py-3.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-body font-medium text-sm rounded-full hover:opacity-80 transition-opacity"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-              </svg>
-              susheelkumaar3@gmail.com
-            </a>
+            <div className="reveal flex flex-wrap gap-4">
+              <a
+                href="mailto:susheekumaar3@gmail.com"
+                className="inline-flex items-center gap-3 px-6 py-3.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-body font-medium text-sm rounded-full hover:opacity-80 transition-opacity"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                susheekumaar3@gmail.com
+              </a>
+              <a
+                href="tel:+923151373181"
+                className="inline-flex items-center gap-3 px-6 py-3.5 border border-neutral-300 dark:border-neutral-700 text-neutral-800 dark:text-neutral-200 font-body font-medium text-sm rounded-full hover:border-neutral-900 dark:hover:border-white transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                +92-315-1373181
+              </a>
+            </div>
           </div>
 
           {/* Right – links */}
@@ -38,8 +48,8 @@ export default function Contact() {
             {[
               {
                 label: "Phone",
-                value: "+92-324-6091924",
-                href: "tel:+923246091924",
+                value: "+92-315-1373181",
+                href: "tel:+923151373181",
                 icon: (
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
@@ -58,7 +68,7 @@ export default function Contact() {
               },
               {
                 label: "LinkedIn",
-                value: "linkedin.com/in/susheelkumar",
+                value: "linkedin.com/in/susheel-k-a961812a6",
                 href: "https://www.linkedin.com/in/susheel-k-a961812a6/",
                 icon: (
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -66,17 +76,29 @@ export default function Contact() {
                   </svg>
                 ),
               },
+              {
+                label: "Portfolio",
+                value: "susheelkumar.vercel.app",
+                href: "https://susheelkumar.vercel.app",
+                icon: (
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                  </svg>
+                ),
+              },
             ].map(({ label, value, href, icon }, i) => (
               <a
                 key={label}
                 href={href}
-                className={`reveal reveal-delay-${i + 1} flex items-center gap-4 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors group`}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className={`reveal reveal-delay-${i + 1} flex items-center gap-4 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors group`}
               >
-                <span className="w-9 h-9 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-400 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-colors">
+                <span className="w-9 h-9 flex items-center justify-center rounded-lg bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-colors border border-neutral-200 dark:border-neutral-700">
                   {icon}
                 </span>
                 <div>
-                  <p className="font-mono text-xs tracking-widest uppercase text-neutral-600 dark:text-neutral-400">
+                  <p className="font-mono text-xs tracking-widest uppercase font-extrabold text-neutral-600 dark:text-neutral-400">
                     {label}
                   </p>
                   <p className="font-body font-medium text-sm text-neutral-800 dark:text-neutral-200">

@@ -21,13 +21,10 @@ export default function About() {
             </h2>
             <div className="reveal h-px w-16 bg-neutral-300 dark:bg-neutral-700 mb-6" />
             <p className="reveal font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base">
-              I'm a motivated Full Stack Developer currently pursuing my
-              Bachelor of Computer Science at Air University, Islamabad (2023–2027).
+              I'm a motivated Full Stack Developer currently pursuing my Bachelor of Computer Science at Air University, Islamabad (2023–2027), with hands-on experience building responsive, scalable web applications.
             </p>
             <p className="reveal reveal-delay-1 font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base mt-4">
-              I have hands-on experience building responsive, scalable web
-              applications. My focus is on writing clean code, delivering great
-              user experiences, and continuously learning new technologies.
+              I work across both the MERN stack (MongoDB, Express.js, React.js, Node.js) and the modern Next.js ecosystem (TypeScript, PostgreSQL, Prisma). I have practical experience integrating AI APIs (Google Gemini) into production features like automated resume screening and content generation, along with multi-tenant architecture and secure authentication.
             </p>
           </div>
 
@@ -36,8 +33,9 @@ export default function About() {
             {[
               { label: "Location", value: "Islamabad, Pakistan" },
               { label: "Education", value: "BSCS — Air University Islamabad" },
-              { label: "Graduation", value: "2023 – 2027" },
-              { label: "Focus", value: "Full Stack Web Development" },
+              { label: "Timeline", value: "2023 – 2027" },
+              { label: "Core Stack", value: "Next.js, React, Node.js, PostgreSQL, MongoDB" },
+              { label: "Specialty", value: "Full Stack & Gemini AI Integration" },
               { label: "Email", value: "susheelkumaar3@gmail.com" },
             ].map(({ label, value }, i) => (
               <div

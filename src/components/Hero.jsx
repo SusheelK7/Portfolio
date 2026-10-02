@@ -32,9 +32,10 @@ export default function Hero() {
         </h1>
 
         {/* Summary */}
-        <p className="reveal reveal-delay-3 font-body text-base font-light text-neutral-700 dark:text-neutral-400 max-w-xl mx-auto leading-relaxed mb-12">
-          Building responsive, scalable web applications with clean code and a
-          passion for modern UI — from backend APIs to polished frontends.
+        <p className="reveal reveal-delay-3 font-body text-base font-light text-neutral-700 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed mb-12">
+          Full Stack Developer with hands-on experience building scalable web
+          applications across the MERN stack and modern Next.js ecosystem, integrating
+          Google Gemini AI into production-ready features.
         </p>
 
         {/* CTAs */}
