@@ -16,7 +16,7 @@ export default function Education() {
         </h2>
 
         {/* Education card */}
-        <div className="reveal reveal-delay-1 bg-white dark:bg-neutral-950 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-8 md:p-10 mb-8">
+        <div className="reveal reveal-delay-1 card-3d bg-white dark:bg-neutral-950 rounded-2xl border border-neutral-200/90 dark:border-neutral-800 p-8 md:p-10 mb-8">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
             <div>
               <p className="font-mono text-xs tracking-widest uppercase font-extrabold text-neutral-600 dark:text-neutral-400 mb-2">
@@ -33,7 +33,7 @@ export default function Education() {
               </p>
             </div>
             <div className="text-right shrink-0">
-              <span className="inline-block px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300">
+              <span className="inline-block px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 pill-3d">
                 2023 – 2027
               </span>
               <p className="font-mono text-xs text-neutral-600 dark:text-neutral-400 font-bold mt-2">
@@ -65,7 +65,7 @@ export default function Education() {
             ].map(({ title, desc }, i) => (
               <div
                 key={title}
-                className={`reveal reveal-delay-${i + 2} p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
+                className={`reveal reveal-delay-${i + 2} card-3d p-5 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
               >
                 <h4 className="font-body font-semibold text-sm text-neutral-900 dark:text-white mb-2">
                   {title}

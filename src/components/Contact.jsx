@@ -37,7 +37,7 @@ export default function Contact() {
             <div className="reveal flex flex-wrap items-center gap-3">
               <a
                 href={`mailto:${email}`}
-                className="inline-flex items-center gap-3 px-6 py-3.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 font-body font-semibold text-sm rounded-full hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-sm"
+                className="inline-flex items-center gap-3 px-6 py-3.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 font-body font-semibold text-sm rounded-full btn-3d"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -47,7 +47,7 @@ export default function Contact() {
 
               <button
                 onClick={handleCopy}
-                className="inline-flex items-center gap-2 px-5 py-3.5 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 font-body text-xs font-semibold text-neutral-800 dark:text-neutral-200 rounded-full hover:border-neutral-900 dark:hover:border-white transition-all"
+                className="inline-flex items-center gap-2 px-5 py-3.5 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 font-body text-xs font-semibold text-neutral-800 dark:text-neutral-200 rounded-full btn-3d cursor-pointer"
                 title="Copy email to clipboard"
               >
                 {copied ? (
@@ -118,9 +118,9 @@ export default function Contact() {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`reveal reveal-delay-${i + 1} card-hover flex items-center gap-4 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all group shadow-sm`}
+                className={`reveal reveal-delay-${i + 1} card-3d flex items-center gap-4 p-4 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950 group`}
               >
-                <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800/90 text-neutral-700 dark:text-neutral-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-colors border border-neutral-200/80 dark:border-neutral-700/80 shrink-0">
+                <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-800 transition-colors border border-neutral-200/80 dark:border-neutral-700/80 shrink-0 pill-3d">
                   {icon}
                 </span>
                 <div className="min-w-0">

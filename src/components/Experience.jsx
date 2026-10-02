@@ -58,7 +58,7 @@ export default function Experience() {
 
               {/* Experience Card */}
               <div
-                className={`reveal reveal-delay-${i + 1} card-hover bg-neutral-50/90 dark:bg-neutral-900/90 backdrop-blur-sm rounded-2xl border border-neutral-200 dark:border-neutral-800 p-7 md:p-9 shadow-sm`}
+                className={`reveal reveal-delay-${i + 1} card-3d bg-white dark:bg-neutral-900/95 backdrop-blur-md rounded-2xl border border-neutral-200/90 dark:border-neutral-800 p-7 md:p-9`}
               >
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5 pb-5 border-b border-neutral-200 dark:border-neutral-800">
@@ -67,7 +67,7 @@ export default function Experience() {
                       <h3 className="font-display text-2xl font-bold text-neutral-900 dark:text-white">
                         {exp.role}
                       </h3>
-                      <span className="px-2.5 py-0.5 rounded-full bg-neutral-200 dark:bg-neutral-800 text-[11px] font-mono font-medium text-neutral-800 dark:text-neutral-300">
+                      <span className="px-2.5 py-0.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-bold text-neutral-800 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-700 pill-3d">
                         {exp.badge}
                       </span>
                     </div>
@@ -81,7 +81,7 @@ export default function Experience() {
                       Featured Project: <span className="font-bold text-neutral-900 dark:text-white">{exp.project}</span> ({exp.projectType})
                     </p>
                   </div>
-                  <span className="inline-block px-3.5 py-1.5 rounded-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs font-semibold text-neutral-800 dark:text-neutral-300 w-fit shrink-0">
+                  <span className="inline-block px-3.5 py-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs font-semibold text-neutral-800 dark:text-neutral-300 w-fit shrink-0 pill-3d">
                     {exp.period}
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export default function Experience() {
                   {exp.tech.map((t) => (
                     <span
                       key={t}
-                      className="px-2.5 py-1 rounded-md bg-white dark:bg-neutral-800/90 border border-neutral-200 dark:border-neutral-700/80 font-mono text-xs text-neutral-700 dark:text-neutral-300 font-medium"
+                      className="px-2.5 py-1 rounded-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 font-medium pill-3d"
                     >
                       {t}
                     </span>

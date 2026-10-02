@@ -40,7 +40,7 @@ export default function About() {
             ].map(({ label, value }, i) => (
               <div
                 key={label}
-                className={`reveal reveal-delay-${i + 1} flex items-start gap-4 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
+                className={`reveal reveal-delay-${i + 1} card-3d flex items-start gap-4 p-4 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
               >
                 <span className="font-mono text-xs font-extrabold text-neutral-600 dark:text-neutral-400 uppercase tracking-widest pt-0.5 w-24 shrink-0">
                   {label}
