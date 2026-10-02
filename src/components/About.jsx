@@ -33,7 +33,7 @@ export default function About() {
             {[
               { label: "Location", value: "Islamabad, Pakistan" },
               { label: "Education", value: "BSCS — Air University Islamabad" },
-              { label: "Timeline", value: "2023 – 2027" },
+
               { label: "Core Stack", value: "Next.js, React, Node.js, PostgreSQL, MongoDB" },
               { label: "Specialty", value: "Full Stack & Gemini AI Integration" },
               { label: "Email", value: "susheelkumaar3@gmail.com" },
