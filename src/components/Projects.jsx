@@ -8,6 +8,7 @@ const projects = [
     featured: true,
     category: "Next.js & AI",
     repo: "https://github.com/SusheelK7",
+    liveDemo: "https://myairecruiter.vercel.app/",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "Gemini API", "Tailwind CSS", "Zod"],
     description:
       "A multi-tenant SaaS hiring platform automating resume screening, secure candidate testing, and interview scheduling with company-scoped data isolation and automated AI scoring.",
@@ -54,11 +55,12 @@ const projects = [
   },
   {
     number: "04",
-    title: "Timetable Management System",
+    title: "ClassPing",
     subtitle: "Class Schedule & Routine Manager",
     featured: false,
     category: "MERN Stack",
     repo: "https://github.com/SusheelK7/ClassPulse.git",
+    liveDemo: "https://classping-app.vercel.app",
     stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
     description:
       "A web application built to manage university class schedules seamlessly with automated timetable upload, manual entry, and an intuitive dashboard showing ongoing, upcoming, and completed classes.",
@@ -183,7 +185,21 @@ export default function Projects() {
                     </div>
 
                     {/* Action Links */}
-                    <div className="mt-6 pt-4 border-t border-neutral-200 dark:border-neutral-800 flex items-center gap-3">
+                    <div className="mt-6 pt-4 border-t border-neutral-200 dark:border-neutral-800 flex flex-wrap items-center gap-3">
+                      {p.liveDemo && (
+                        <a
+                          href={p.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-semibold btn-3d transition-colors"
+                        >
+                          <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                          </span>
+                          <span>Live Demo ↗</span>
+                        </a>
+                      )}
                       {p.repo && (
                         <a
                           href={p.repo}

@@ -24,7 +24,7 @@ export default function About() {
               I'm a motivated Full Stack Developer currently pursuing my Bachelor of Computer Science at Air University, Islamabad (2023–2027), with hands-on experience building responsive, scalable web applications.
             </p>
             <p className="reveal reveal-delay-1 font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base mt-4">
-              I work across both the MERN stack (MongoDB, Express.js, React.js, Node.js) and the modern Next.js ecosystem (TypeScript, PostgreSQL, Prisma). I have practical experience integrating AI APIs (Google Gemini) into production features like automated resume screening and content generation, along with multi-tenant architecture and secure authentication.
+              I work across the full stack (MongoDB, Express.js, React.js, Node.js) and the modern Next.js ecosystem (TypeScript, PostgreSQL, Prisma). I have practical experience integrating AI APIs (Google Gemini) into production features like automated resume screening and content generation, along with multi-tenant architecture and secure authentication.
             </p>
           </div>
 

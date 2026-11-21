@@ -5,9 +5,10 @@ export default function Experience() {
       company: "VisionX",
       location: "Islamabad, Pakistan",
       period: "July – Sept",
-      badge: "Internship & FYP",
+      badge: "Internship",
       project: "AI Recruiter",
       projectType: "Multi-Tenant SaaS Hiring Platform",
+      liveDemo: "https://myairecruiter.vercel.app/",
       points: [
         "Architected and built 'AI Recruiter', an end-to-end multi-tenant SaaS hiring platform automating resume screening, secure candidate assessments, and interview management.",
         "Implemented secure JWT authentication with email verification, password-reset flows, and robust schema validation using Zod.",
@@ -77,9 +78,25 @@ export default function Experience() {
                         — {exp.location}
                       </span>
                     </p>
-                    <p className="font-mono text-xs text-neutral-600 dark:text-neutral-400 mt-1">
-                      Featured Project: <span className="font-bold text-neutral-900 dark:text-white">{exp.project}</span> ({exp.projectType})
-                    </p>
+                    <div className="flex flex-wrap items-center gap-2.5 mt-1.5">
+                      <p className="font-mono text-xs text-neutral-600 dark:text-neutral-400">
+                        Featured Project: <span className="font-bold text-neutral-900 dark:text-white">{exp.project}</span> ({exp.projectType})
+                      </p>
+                      {exp.liveDemo && (
+                        <a
+                          href={exp.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-300 dark:border-emerald-800 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/80 transition-all pill-3d"
+                        >
+                          <span className="relative flex h-1.5 w-1.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                          </span>
+                          <span>Live Demo ↗</span>
+                        </a>
+                      )}
+                    </div>
                   </div>
                   <span className="inline-block px-3.5 py-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs font-semibold text-neutral-800 dark:text-neutral-300 w-fit shrink-0 pill-3d">
                     {exp.period}
@@ -99,16 +116,29 @@ export default function Experience() {
                   ))}
                 </ul>
 
-                {/* Tech tags */}
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {exp.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="px-2.5 py-1 rounded-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 font-medium pill-3d"
+                {/* Tech tags & Live Demo Action */}
+                <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-neutral-100 dark:border-neutral-800/80">
+                  <div className="flex flex-wrap gap-2">
+                    {exp.tech.map((t) => (
+                      <span
+                        key={t}
+                        className="px-2.5 py-1 rounded-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 font-medium pill-3d"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                  {exp.liveDemo && (
+                    <a
+                      href={exp.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-semibold btn-3d transition-all shrink-0"
                     >
-                      {t}
-                    </span>
-                  ))}
+                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                      <span>Live Demo ↗</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 export default function Hero() {
   const highlights = [
     "Next.js (App Router)",
-    "MERN Stack",
+    "Full Stack",
     "PostgreSQL & Prisma",
     "Google Gemini AI",
     "Multi-Tenant Architecture",
@@ -54,7 +54,7 @@ export default function Hero() {
 
         {/* Summary */}
         <p className="reveal reveal-delay-3 font-body text-base md:text-lg font-normal text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed mb-10">
-          Building responsive, scalable web applications across the <span className="text-neutral-900 dark:text-white font-semibold">MERN stack</span> and modern <span className="text-neutral-900 dark:text-white font-semibold">Next.js ecosystem</span>, with hands-on experience integrating <span className="text-neutral-900 dark:text-white font-semibold">Google Gemini AI</span> into production features.
+          Building responsive, scalable web applications across the <span className="text-neutral-900 dark:text-white font-semibold">Full stack</span> and modern <span className="text-neutral-900 dark:text-white font-semibold">Next.js ecosystem</span>, with hands-on experience integrating <span className="text-neutral-900 dark:text-white font-semibold">Google Gemini AI</span> into production features.
         </p>
 
         {/* 3D Action Buttons */}
