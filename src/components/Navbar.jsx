@@ -5,15 +5,28 @@ const links = ["About", "Experience", "Skills", "Projects", "Education", "Contac
 export default function Navbar({ dark, toggleDark }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) {
+        setScrollProgress((window.scrollY / totalHeight) * 100);
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
+      {/* Scroll Progress Bar */}
+      <div
+        className="fixed top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 z-[60] origin-left transition-transform duration-100 ease-out"
+        style={{ transform: `scaleX(${scrollProgress / 100})` }}
+      />
+
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-3 transition-all duration-500">
         <nav
           className={`pointer-events-auto nav-island transition-all duration-500 ${
@@ -37,7 +50,7 @@ export default function Navbar({ dark, toggleDark }) {
               <li key={l}>
                 <a
                   href={`#${l.toLowerCase()}`}
-                  className="px-3.5 py-1.5 rounded-full font-body text-xs font-semibold tracking-wide text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-white dark:hover:bg-neutral-800/90 hover:shadow-sm transition-all"
+                  className="px-3.5 py-1.5 rounded-full font-body text-xs font-semibold tracking-wide text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-white dark:hover:bg-neutral-800/90 hover:shadow-sm hover:scale-105 active:scale-95 transition-all duration-200"
                 >
                   {l}
                 </a>
@@ -49,7 +62,7 @@ export default function Navbar({ dark, toggleDark }) {
             {/* Quick Contact CTA */}
             <a
               href="#contact"
-              className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 btn-3d"
+              className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 btn-3d hover:scale-105 active:scale-95 transition-all duration-200"
             >
               Let's Talk
             </a>
@@ -58,23 +71,25 @@ export default function Navbar({ dark, toggleDark }) {
             <button
               onClick={toggleDark}
               aria-label="Toggle theme"
-              className="w-9 h-9 rounded-full flex items-center justify-center bg-neutral-100 dark:bg-neutral-800/90 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all border border-neutral-200/80 dark:border-neutral-700/60 shadow-sm cursor-pointer"
+              className="group w-9 h-9 rounded-full flex items-center justify-center bg-neutral-100 dark:bg-neutral-800/90 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all duration-300 border border-neutral-200/80 dark:border-neutral-700/60 shadow-sm cursor-pointer hover:scale-105 active:scale-95"
             >
-              {dark ? (
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 3a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm9-7a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zm14.657-5.657a1 1 0 0 1 0 1.414l-.707.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0zM7.05 16.95a1 1 0 0 1 0 1.414l-.706.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0zm11.314 1.414a1 1 0 0 1-1.414 0l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707a1 1 0 0 1 0 1.414zM7.05 7.05a1 1 0 0 1-1.414 0l-.707-.706A1 1 0 0 1 6.343 4.93l.707.707a1 1 0 0 1 0 1.414zM12 7a5 5 0 1 0 0 10A5 5 0 0 0 12 7z"/>
-                </svg>
-              ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-neutral-700" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
-                </svg>
-              )}
+              <span className={`inline-flex items-center justify-center transition-transform duration-500 transform ${dark ? "rotate-[360deg]" : "rotate-0"}`}>
+                {dark ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-amber-400 group-hover:rotate-45 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm9-7a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zm14.657-5.657a1 1 0 0 1 0 1.414l-.707.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0zM7.05 16.95a1 1 0 0 1 0 1.414l-.706.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0zm11.314 1.414a1 1 0 0 1-1.414 0l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707a1 1 0 0 1 0 1.414zM7.05 7.05a1 1 0 0 1-1.414 0l-.707-.706A1 1 0 0 1 6.343 4.93l.707.707a1 1 0 0 1 0 1.414zM12 7a5 5 0 1 0 0 10A5 5 0 0 0 12 7z"/>
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-neutral-700 group-hover:-rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+                  </svg>
+                )}
+              </span>
             </button>
 
             {/* Mobile Hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden w-9 h-9 flex items-center justify-center rounded-full bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 cursor-pointer"
+              className="md:hidden w-9 h-9 flex items-center justify-center rounded-full bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
               aria-label="Toggle menu"
             >
               <div className="flex flex-col gap-1.5">

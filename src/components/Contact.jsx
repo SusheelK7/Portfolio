@@ -37,7 +37,7 @@ export default function Contact() {
             <div className="reveal flex flex-wrap items-center gap-3">
               <a
                 href={`mailto:${email}`}
-                className="inline-flex items-center gap-3 px-6 py-3.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 font-body font-semibold text-sm rounded-full btn-3d"
+                className="inline-flex items-center gap-3 px-6 py-3.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-950 font-body font-semibold text-sm rounded-full btn-3d hover:scale-105 active:scale-95 transition-all duration-200"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -47,23 +47,23 @@ export default function Contact() {
 
               <button
                 onClick={handleCopy}
-                className="inline-flex items-center gap-2 px-5 py-3.5 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 font-body text-xs font-semibold text-neutral-800 dark:text-neutral-200 rounded-full btn-3d cursor-pointer"
+                className="inline-flex items-center gap-2 px-5 py-3.5 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 font-body text-xs font-semibold text-neutral-800 dark:text-neutral-200 rounded-full btn-3d hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
                 title="Copy email to clipboard"
               >
                 {copied ? (
-                  <>
+                  <span className="inline-flex items-center gap-2 animate-pop-in">
                     <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                     </svg>
-                    <span className="text-emerald-600 dark:text-emerald-400">Copied!</span>
-                  </>
+                    <span className="text-emerald-600 dark:text-emerald-400 font-bold">Copied!</span>
+                  </span>
                 ) : (
-                  <>
+                  <span className="inline-flex items-center gap-2">
                     <svg className="w-4 h-4 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
                     </svg>
                     <span>Copy Email</span>
-                  </>
+                  </span>
                 )}
               </button>
             </div>
@@ -118,19 +118,22 @@ export default function Contact() {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`reveal reveal-delay-${i + 1} card-3d flex items-center gap-4 p-4 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950 group`}
+                className={`reveal-scale reveal-delay-${i + 1} card-3d flex items-center gap-4 p-4 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950 group hover:-translate-y-1 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300`}
               >
-                <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-800 transition-colors border border-neutral-200/80 dark:border-neutral-700/80 shrink-0 pill-3d">
+                <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 group-hover:scale-110 group-hover:bg-neutral-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-neutral-900 transition-all duration-300 border border-neutral-200/80 dark:border-neutral-700/80 shrink-0 pill-3d">
                   {icon}
                 </span>
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="font-mono text-[11px] tracking-widest uppercase font-extrabold text-neutral-600 dark:text-neutral-400">
                     {label}
                   </p>
-                  <p className="font-body font-medium text-sm text-neutral-800 dark:text-neutral-200 truncate">
+                  <p className="font-body font-medium text-sm text-neutral-800 dark:text-neutral-200 truncate group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
                     {value}
                   </p>
                 </div>
+                <span className="text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-white group-hover:translate-x-1 transition-all duration-200 pr-1 text-sm">
+                  ↗
+                </span>
               </a>
             ))}
           </div>

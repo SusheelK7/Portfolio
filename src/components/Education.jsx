@@ -16,13 +16,13 @@ export default function Education() {
         </h2>
 
         {/* Education card */}
-        <div className="reveal reveal-delay-1 card-3d bg-white dark:bg-neutral-950 rounded-2xl border border-neutral-200/90 dark:border-neutral-800 p-8 md:p-10 mb-8">
+        <div className="reveal-scale reveal-delay-1 card-3d group bg-white dark:bg-neutral-950 rounded-2xl border border-neutral-200/90 dark:border-neutral-800 p-8 md:p-10 mb-8 hover:-translate-y-1 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
             <div>
               <p className="font-mono text-xs tracking-widest uppercase font-extrabold text-neutral-600 dark:text-neutral-400 mb-2">
                 Degree
               </p>
-              <h3 className="font-display text-2xl font-bold text-neutral-900 dark:text-white mb-1">
+              <h3 className="font-display text-2xl font-bold text-neutral-900 dark:text-white mb-1 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
                 Bachelor of Computer Science (BSCS)
               </h3>
               <p className="font-body font-medium text-neutral-700 dark:text-neutral-300">
@@ -33,7 +33,7 @@ export default function Education() {
               </p>
             </div>
             <div className="text-right shrink-0">
-              <span className="inline-block px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 pill-3d">
+              <span className="inline-block px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 pill-3d hover:scale-105 transition-transform duration-200">
                 2023 – 2027
               </span>
               <p className="font-mono text-xs text-neutral-600 dark:text-neutral-400 font-bold mt-2">
@@ -65,9 +65,9 @@ export default function Education() {
             ].map(({ title, desc }, i) => (
               <div
                 key={title}
-                className={`reveal reveal-delay-${i + 2} card-3d p-5 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
+                className={`reveal-scale reveal-delay-${i + 2} card-3d group p-5 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950 hover:-translate-y-1 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300`}
               >
-                <h4 className="font-body font-semibold text-sm text-neutral-900 dark:text-white mb-2">
+                <h4 className="font-body font-semibold text-sm text-neutral-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
                   {title}
                 </h4>
                 <p className="font-body font-light text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">

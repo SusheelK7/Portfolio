@@ -106,13 +106,13 @@ export default function Skills() {
           {skillGroups.map(({ category, icon, skills }, gi) => (
             <div
               key={category}
-              className={`reveal reveal-delay-${(gi % 3) + 1} card-3d p-6 rounded-2xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
+              className={`reveal-scale reveal-delay-${(gi % 3) + 1} card-3d group p-6 rounded-2xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950 hover:-translate-y-1.5 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300`}
             >
               <div className="flex items-center gap-2.5 mb-4 text-neutral-800 dark:text-neutral-200">
-                <span className="p-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 pill-3d">
+                <span className="p-2 rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 pill-3d group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-800">
                   {icon}
                 </span>
-                <p className="font-mono text-xs font-bold tracking-wider uppercase">
+                <p className="font-mono text-xs font-bold tracking-wider uppercase group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
                   {category}
                 </p>
               </div>
@@ -120,7 +120,7 @@ export default function Skills() {
                 {skills.map((s) => (
                   <span
                     key={s}
-                    className="px-2.5 py-1.5 rounded-lg bg-neutral-50 dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800/80 font-body text-xs font-medium text-neutral-700 dark:text-neutral-300 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all hover:scale-105 pill-3d"
+                    className="px-2.5 py-1.5 rounded-lg bg-neutral-50 dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800/80 font-body text-xs font-medium text-neutral-700 dark:text-neutral-300 hover:border-neutral-900 dark:hover:border-white hover:bg-neutral-900 hover:text-white dark:hover:bg-white dark:hover:text-neutral-900 transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 pill-3d cursor-default"
                   >
                     {s}
                   </span>

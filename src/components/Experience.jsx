@@ -53,14 +53,17 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <div key={exp.company + exp.role} className="relative group">
               {/* Timeline marker node */}
-              <div className="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full border-2 border-neutral-900 dark:border-white bg-white dark:bg-neutral-950 group-hover:scale-125 transition-transform duration-300">
-                <div className="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white m-auto mt-0.5" />
+              <div className="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full border-2 border-neutral-900 dark:border-white bg-white dark:bg-neutral-950 group-hover:scale-125 group-hover:border-emerald-500 transition-all duration-300">
+                <div className="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white group-hover:bg-emerald-500 m-auto mt-0.5 transition-colors duration-300" />
               </div>
 
               {/* Experience Card */}
               <div
-                className={`reveal reveal-delay-${i + 1} card-3d bg-white dark:bg-neutral-900/95 backdrop-blur-md rounded-2xl border border-neutral-200/90 dark:border-neutral-800 p-7 md:p-9`}
+                className={`reveal-scale reveal-delay-${i + 1} card-3d group/card relative bg-white dark:bg-neutral-900/95 backdrop-blur-md rounded-2xl border border-neutral-200/90 dark:border-neutral-800 p-7 md:p-9 hover:-translate-y-1.5 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300 overflow-hidden`}
               >
+                {/* Top ambient hover accent glow */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5 pb-5 border-b border-neutral-200 dark:border-neutral-800">
                   <div>
@@ -87,7 +90,7 @@ export default function Experience() {
                           href={exp.liveDemo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-300 dark:border-emerald-800 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/80 transition-all pill-3d"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-300 dark:border-emerald-800 text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/80 hover:scale-105 active:scale-95 transition-all duration-200 pill-3d"
                         >
                           <span className="relative flex h-1.5 w-1.5">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -108,9 +111,9 @@ export default function Experience() {
                   {exp.points.map((pt, idx) => (
                     <li
                       key={idx}
-                      className="flex items-start gap-3 font-body text-sm font-light text-neutral-700 dark:text-neutral-300 leading-relaxed"
+                      className="group/pt flex items-start gap-3 font-body text-sm font-light text-neutral-700 dark:text-neutral-300 leading-relaxed hover:translate-x-1 transition-transform duration-200"
                     >
-                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-neutral-400 dark:bg-neutral-500 shrink-0" />
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-neutral-400 dark:bg-neutral-500 group-hover/pt:bg-emerald-500 group-hover/pt:scale-125 transition-all duration-200 shrink-0" />
                       <span>{pt}</span>
                     </li>
                   ))}
@@ -122,7 +125,7 @@ export default function Experience() {
                     {exp.tech.map((t) => (
                       <span
                         key={t}
-                        className="px-2.5 py-1 rounded-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 font-medium pill-3d"
+                        className="px-2.5 py-1 rounded-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 font-mono text-xs text-neutral-700 dark:text-neutral-300 font-medium pill-3d hover:scale-105 hover:-translate-y-0.5 transition-all duration-200 cursor-default"
                       >
                         {t}
                       </span>
@@ -133,7 +136,7 @@ export default function Experience() {
                       href={exp.liveDemo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-semibold btn-3d transition-all shrink-0"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-semibold btn-3d hover:scale-105 active:scale-95 transition-all duration-200 shrink-0 shadow-sm"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                       <span>Live Demo ↗</span>

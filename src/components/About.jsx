@@ -19,7 +19,7 @@ export default function About() {
                 experiences
               </span>
             </h2>
-            <div className="reveal h-px w-16 bg-neutral-300 dark:bg-neutral-700 mb-6" />
+            <div className="reveal-left h-px w-16 bg-neutral-300 dark:bg-neutral-700 mb-6" />
             <p className="reveal font-body font-light text-neutral-600 dark:text-neutral-400 leading-relaxed text-base">
               I'm a motivated Full Stack Developer currently pursuing my Bachelor of Computer Science at Air University, Islamabad (2023–2027), with hands-on experience building responsive, scalable web applications.
             </p>
@@ -33,16 +33,15 @@ export default function About() {
             {[
               { label: "Location", value: "Islamabad, Pakistan" },
               { label: "Education", value: "BSCS — Air University Islamabad" },
-
               { label: "Core Stack", value: "Next.js, React, Node.js, PostgreSQL, MongoDB" },
               { label: "Specialty", value: "Full Stack & Gemini AI Integration" },
               { label: "Email", value: "susheelkumaar3@gmail.com" },
             ].map(({ label, value }, i) => (
               <div
                 key={label}
-                className={`reveal reveal-delay-${i + 1} card-3d flex items-start gap-4 p-4 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950`}
+                className={`reveal-scale reveal-delay-${i + 1} card-3d group flex items-start gap-4 p-4 rounded-xl border border-neutral-200/90 dark:border-neutral-800 bg-white dark:bg-neutral-950 hover:-translate-y-1 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300`}
               >
-                <span className="font-mono text-xs font-extrabold text-neutral-600 dark:text-neutral-400 uppercase tracking-widest pt-0.5 w-24 shrink-0">
+                <span className="font-mono text-xs font-extrabold text-neutral-600 dark:text-neutral-400 uppercase tracking-widest pt-0.5 w-24 shrink-0 group-hover:text-neutral-900 dark:group-hover:text-white transition-colors duration-200">
                   {label}
                 </span>
                 <span className="font-body font-medium text-sm text-neutral-800 dark:text-neutral-200">
