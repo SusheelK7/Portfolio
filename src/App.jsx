@@ -9,6 +9,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Chatbot from "./components/Chatbot";
 import { Analytics } from "@vercel/analytics/react";
 import { useReveal } from "./hooks/useReveal";
 
@@ -50,6 +51,7 @@ export default function App() {
         <Contact />
       </main>
       <ScrollToTop />
+      <Chatbot />
       <Footer />
       <Analytics />
     </div>
